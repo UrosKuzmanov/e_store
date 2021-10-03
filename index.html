@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!--faviicon-->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!--glide slideshow-->
+
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+    
+    <!--style css-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+
+    <header class="header" id="header">
+
+         <!----------------------navigation-------------->
+        <div class="navigation">
+            <div class="container">
+                <nav class="nav">
+                    <div class="nav_hamburger">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm" height="32.2354mm" version="1.1"
+                            viewBox="0 0 36.86 30.2">
+                            <use href="./images/sprite.svg#icon-menu"></use>
+                        </svg>
+                    </div>
+                    <div class="nav_logo">
+                        <a href="/" class="scroll-link">PHONE</a>
+                    </div>
+                    <div class="nav_menu">
+                        <div class="menu_top">
+                            <span class="nav_category">PHONE</span>
+                            <a href="#" class="close_toggle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm" height="32.2354mm"
+                                    version="1.1" viewBox="0 0 36.86 30.2">
+                                    <use href="./images/sprite.svg#icon-cross"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <ul class="navi_list">
+                            <li class="nav_item">
+                                <a href="#header" class="nav_link scroll-link">Home</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#category" class="nav_link scroll-link">Category</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#news" class="nav_link scroll-link">Blog</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#contact" class="nav_link scroll-link">Contact</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="nav_icon">
+
+                        <a href="#" class="icon_item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm" height="32.2354mm" version="1.1"
+                                viewBox="0 0 36.86 30.2">
+                                <use href="./images/sprite.svg#icon-user"></use>
+                            </svg>
+                        </a>
+
+                        <a href="#" class="icon_item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm" height="32.2354mm" version="1.1"
+                                viewBox="0 0 36.86 30.2">
+                                <use href="./images/sprite.svg#icon-search"></use>
+                            </svg>
+                        </a>
+
+                        <a href="#" class="icon_item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm" height="32.2354mm" version="1.1"
+                                viewBox="0 0 36.86 30.2">
+                                <use href="./images/sprite.svg#icon-shopping-basket"></use>
+                            </svg>
+                            <span id="cart_total">0</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!----------------------hero--------------------->
+        <div class="hero">
+            <div class="glide" id="glide_1">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <div class="hero_center">
+                                <div class="hero_left">
+                                    <span>New Inspiration 2021</span>
+                                    <h1>PHONE MADE FOR YOU!</h1>
+                                    <p>Trending from mobile and headphone style collection</p>
+                                    <a href="#"><button class="hero_btn">SHOP NOW</button></a>
+                                </div>
+                                <div class="hero_right">
+                                    <div class="hero_img_container">
+                                        <img src="./images/banner_01.png" alt="Mobile" class="banner_01">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="hero_center">
+                                <div class="hero_left">
+                                    <span>New Inspiration 2021</span>
+                                    <h1>PHONE MADE FOR YOU!</h1>
+                                    <p>Trending from mobile and headphone style collection</p>
+                                    <a href="#"><button class="hero_btn">SHOP NOW</button></a>
+                                </div>
+                                <div class="hero_right">
+                                    <div class="hero_img_container">
+                                        <img src="./images/banner_02.png" alt="Mobile" class="banner_02">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm" height="32.2354mm" version="1.1"
+                            viewBox="0 0 36.86 30.2">
+                            <use href="./images/sprite.svg#icon-arrow-left2"></use>
+                        </svg>
+                    </button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm" height="32.2354mm" version="1.1"
+                            viewBox="0 0 36.86 30.2">
+                            <use href="./images/sprite.svg#icon-arrow-right2"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+        <!----------------------main--------------------->
+    <main id="main">
+
+        <!----------------------collection--------------->
+        <section class="section collection" id="collection">
+            <div class="container">
+                <div class="collection_container">
+                    <div class="collection_box">
+                        <div class="img_container">
+                            <img src="./images/collection_02.png" alt="" class="collection_02">
+                        </div>
+                        <div class="collection_content">
+                            <div class="collection_data">
+                                <span>New Colors Introduced</span>
+                                <h1>HEADPHONES</h1>
+                                <a href="#">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collection_box">
+                        <div class="img_container">
+                            <img src="./images/collection_01.png" alt="" class="collection_01">
+                        </div>
+                        <div class="collection_content">
+                            <div class="collection_data">
+                                <span>Phone device Preset</span>
+                                <h1>Smartphones</h1>
+                                <a href="#">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!----------------------latest product----------->
+        <section>
+            <section class="section latest_product" id="latest">
+                <div class="title_container">
+                    <div class="section_title " data-id="Latest Product">
+                        <span class="dot"></span>
+                        <h1 class="primary_title">Latest Products</h1>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="glide" id="glide2">
+                        <div class="glide__track" data-glide-el="track">
+
+                            <ul class="glide__slides">
+                                <li class="glide__slide">
+                                    <div class="product">
+                                        <div class="product_header">
+                                            <img src="./images/products/iPhone/iphone6.jpeg" alt="">
+                                        </div>
+                                        <div class="product_footer">
+                                            <h3>Aplle iPhone 11</h3>
+                                            <div class="rating">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="product_price">
+                                                <h4>$750</h4>
+                                                <a href="#"><button class="product_btn">Add To Card</button></a>
+                                            </div>
+                                            <ul>
+                                                <li><a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                            height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                            <use href="./images/sprite.svg#icon-heart-o"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                            height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                            <use href="./images/sprite.svg#icon-eye"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                            height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                            <use href="./images/sprite.svg#icon-loop2"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="product">
+                                        <div class="product_header">
+                                            <img src="./images/products/headphone/headphone10.jpeg" alt="">
+                                        </div>
+                                        <div class="product_footer">
+                                            <h3>Aplle iPhone 11</h3>
+                                            <div class="rating">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="product_price">
+                                                <h4>$750</h4>
+                                                <a href="#"><button class="product_btn">Add To Card</button></a>
+                                            </div>
+                                            <ul>
+                                                <li><a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                            height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                            <use href="./images/sprite.svg#icon-heart-o"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                            height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                            <use href="./images/sprite.svg#icon-eye"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                            height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                            <use href="./images/sprite.svg#icon-loop2"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="product">
+                                        <div class="product_header">
+                                            <img src="./images/products/iPhone/iphone3.jpeg" alt="">
+                                        </div>
+                                        <div class="product_footer">
+                                            <h3>Aplle iPhone 11</h3>
+                                            <div class="rating">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="product_price">
+                                                <h4>$750</h4>
+                                                <a href="#"><button class="product_btn">Add To Card</button></a>
+                                            </div>
+                                            <ul>
+                                                <li><a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                            height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                            <use href="./images/sprite.svg#icon-heart-o"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                            height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                            <use href="./images/sprite.svg#icon-eye"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                            height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                            <use href="./images/sprite.svg#icon-loop2"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="product">
+                                        <div class="product_header">
+                                            <img src="./images/products/sumsung/samsung2.jpeg" alt="">
+                                        </div>
+                                        <div class="product_footer">
+                                            <h3>Aplle iPhone 11</h3>
+                                            <div class="rating">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="product_price">
+                                                <h4>$750</h4>
+                                                <a href="#"><button class="product_btn">Add To Card</button></a>
+                                            </div>
+                                            <ul>
+                                                <li><a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                            height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                            <use href="./images/sprite.svg#icon-heart-o"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                            height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                            <use href="./images/sprite.svg#icon-eye"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                            height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                            <use href="./images/sprite.svg#icon-loop2"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="product">
+                                        <div class="product_header">
+                                            <img src="./images/products/headphone/headphone4.jpeg" alt="">
+                                        </div>
+                                        <div class="product_footer">
+                                            <h3>Aplle iPhone 11</h3>
+                                            <div class="rating">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="product_price">
+                                                <h4>$750</h4>
+                                                <a href="#"><button class="product_btn">Add To Card</button></a>
+                                            </div>
+                                            <ul>
+                                                <li><a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                            height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                            <use href="./images/sprite.svg#icon-heart-o"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                            height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                            <use href="./images/sprite.svg#icon-eye"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                            height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                            <use href="./images/sprite.svg#icon-loop2"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="product">
+                                        <div class="product_header">
+                                            <img src="./images/products/sumsung/samsung5.jpeg" alt="">
+                                        </div>
+                                        <div class="product_footer">
+                                            <h3>Aplle iPhone 11</h3>
+                                            <div class="rating">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="product_price">
+                                                <h4>$750</h4>
+                                                <a href="#"><button class="product_btn">Add To Card</button></a>
+                                            </div>
+                                            <ul>
+                                                <li><a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                            height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                            <use href="./images/sprite.svg#icon-heart-o"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                            height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                            <use href="./images/sprite.svg#icon-eye"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                            height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                            <use href="./images/sprite.svg#icon-loop2"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="product">
+                                        <div class="product_header">
+                                            <img src="./images/products/headphone/headphone5.jpeg" alt="">
+                                        </div>
+                                        <div class="product_footer">
+                                            <h3>Aplle iPhone 11</h3>
+                                            <div class="rating">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="product_price">
+                                                <h4>$750</h4>
+                                                <a href="#"><button class="product_btn">Add To Card</button></a>
+                                            </div>
+                                            <ul>
+                                                <li><a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                            height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                            <use href="./images/sprite.svg#icon-heart-o"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                            height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                            <use href="./images/sprite.svg#icon-eye"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                            height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                            <use href="./images/sprite.svg#icon-loop2"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="product">
+                                        <div class="product_header">
+                                            <img src="./images/products/sumsung/samsung2.jpeg" alt="">
+                                        </div>
+                                        <div class="product_footer">
+                                            <h3>Aplle iPhone 11</h3>
+                                            <div class="rating">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="product_price">
+                                                <h4>$750</h4>
+                                                <a href="#"><button class="product_btn">Add To Card</button></a>
+                                            </div>
+                                            <ul>
+                                                <li><a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                            height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                            <use href="./images/sprite.svg#icon-heart-o"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                            height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                            <use href="./images/sprite.svg#icon-eye"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                            height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                            <use href="./images/sprite.svg#icon-loop2"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="product">
+                                        <div class="product_header">
+                                            <img src="./images/products/iPhone/iphone2.jpeg" alt="">
+                                        </div>
+                                        <div class="product_footer">
+                                            <h3>Aplle iPhone 11</h3>
+                                            <div class="rating">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                    height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                    <use href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="product_price">
+                                                <h4>$750</h4>
+                                                <a href="#"><button class="product_btn">Add To Card</button></a>
+                                            </div>
+                                            <ul>
+                                                <li><a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                            height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                            <use href="./images/sprite.svg#icon-heart-o"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                            height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                            <use href="./images/sprite.svg#icon-eye"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm"
+                                                            height="32.2354mm" version="1.1" viewBox="0 0 36.86 30.2">
+                                                            <use href="./images/sprite.svg#icon-loop2"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm" height="32.2354mm"
+                                    version="1.1" viewBox="0 0 36.86 30.2">
+                                    <use href="./images/sprite.svg#icon-arrow-left2"></use>
+                                </svg>
+                            </button>
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="39.3381mm" height="32.2354mm"
+                                    version="1.1" viewBox="0 0 36.86 30.2">
+                                    <use href="./images/sprite.svg#icon-arrow-right2"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-------------------category--------------------->
+        <section class="category_section section" id="category">
+            <div class="tab_list">
+                <div class="title_container tabs">
+                    <div class="section_titles category_titles">
+                        <div class="section_title filter_btn" data_id="All Products">
+                            <span class="dot"></span>
+                            <h1 class="primary_title">All Products
+                            </h1>
+                        </div>
+
+                    </div>
+                    <div class="section_titles category_titles">
+                        <div class="section_title filter_btn" data_id="Trending Products">
+                            <span class="dot"></span>
+                            <h1 class="primary_title">Trending Products
+                            </h1>
+                        </div>
+
+                    </div>
+                    <div class="section_titles category_titles">
+                        <div class="section_title filter_btn" data_id="Special Products">
+                            <span class="dot"></span>
+                            <h1 class="primary_title">Special Products
+                            </h1>
+                        </div>
+
+                    </div>
+                    <div class="section_titles category_titles">
+                        <div class="section_title filter_btn" data_id="Featured Products">
+                            <span class="dot"></span>
+                            <h1 class="primary_title">Featured Products
+                            </h1>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="category_container">
+                    <div class="category_center">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-------------------facility--------------------->
+        <section class="facility_section section" id="facility">
+            <div class="container">
+                <div class="facility_container">
+                    <div class="facility_box">
+                        <div class="facility_img_container">
+                            <svg xmlns="http://www.w3.org/2000/svg">
+                                <use href="./images/sprite.svg#icon-airplane"></use>
+                            </svg>
+                        </div>
+                        <p>FREE SHIPPING WORLD WIDE</p>
+                    </div>
+                    <div class="facility_box">
+                        <div class="facility_img_container">
+                            <svg xmlns="http://www.w3.org/2000/svg">
+                                <use href="./images/sprite.svg#icon-credit-card-alt"></use>
+                            </svg>
+                        </div>
+                        <p>100% MONEY BACK GUARANTEE</p>
+                    </div>
+                    <div class="facility_box">
+                        <div class="facility_img_container">
+                            <svg xmlns="http://www.w3.org/2000/svg">
+                                <use href="./images/sprite.svg#icon-credit-card"></use>
+                            </svg>
+                        </div>
+                        <p>MANY PAYMENT GETEWEY</p>
+                    </div>
+                    <div class="facility_box">
+                        <div class="facility_img_container">
+                            <svg xmlns="http://www.w3.org/2000/svg">
+                                <use href="./images/sprite.svg#icon-headphones"></use>
+                            </svg>
+                        </div>
+                        <p>24/7 ONLINE SUPORT</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+        
+    <footer id="footer"></footer>
+
+        <!-------------------popup------------------------>
+    <div class="hide_popup popup">
+        <div class="popup_content">
+            <div class="popup_close">
+                <svg xmlns="http://www.w3.org/2000/svg">
+
+                    <use href="./images/sprite.svg#icon-cross"></use>
+                </svg>
+            </div>
+            <div class="popup_left">
+                <div class=" popup_img_container">
+                    <img src="./images/popup.jpg" alt="" class="popup_img">
+                </div>
+            </div>
+            <div class="popup_right">
+                <div class="right_content">
+                    <h1>Get DIscaunt <span>30%</span>off</h1>
+                    <p>Sing up to our newsletter and save 30% for your next purchase</p>
+                    <form action="#">
+                        <input type="email" class="popup_form" placeholder="Enter your email">
+                        <a href="#">Subscribe</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------goto top-------------------->
+    <a href="#" class="goto_top scroll_link">
+        <svg xmlns="http://www.w3.org/2000/svg">
+
+            <use href="./images/sprite.svg#icon-arrow-up"></use>
+        </svg>
+
+    </a>
+
+
+
+    <!--glide slideshow script-->
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <!--app script-->
+    <script src="./javaScript/index.js"></script>
+  
+    <script src="./javaScript/products.js"></script>
+
+    <!-- AOS animation script
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    -->
+
+
+
+</body>
+
+</html>
